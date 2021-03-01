@@ -61,7 +61,7 @@ public class Bank {
 					double wait = Double.parseDouble(split[7]);
 					acc.setWait(wait);
 					SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");   
-					Date date = null; //≥ı ºªØdate 
+					Date date = null; //initialize date 
 					try {
 						date = sdf.parse(split[10]);
 					} catch (ParseException e) {
