@@ -41,8 +41,8 @@ You can choose to
 + Open account
 + Deposit funds
 + Withdraw funds
-	+ Close account
-	+ Suspend account(For bank employee)
-	+ Re-instate(For bank employee)
++ Close account
++ Suspend account(For bank employee)
++ Re-instate(For bank employee)
 
 following the instruction and enter the right information.
