@@ -45,4 +45,4 @@ You can choose to
 	+ Suspend account(For bank employee)
 	+ Re-instate(For bank employee)
 
-following the instruction and enter the right information.
+    following the instruction and enter the right information.
