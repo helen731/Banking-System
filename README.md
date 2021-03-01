@@ -13,6 +13,7 @@ What functions it has?
 	+ Saver account
 	+ Junior account
 	+ Current account
+
 Only customer under age 16 may open a Junior account. A customer may open more than one type of account and must credit it with a minimum figure.
  2. Deposit Funds: Funds may be deposited in an account provided that the depositor provides the appropriate account number. When funds are deposited, they are either cleared (the funds have been fully credited, e.g Cash), or un-cleared (transfer of funds is pending, e.g. using Cheque). Cleared funds are immediately credited to the
 account.
