@@ -38,11 +38,11 @@ How to use it?
 -------------------
 
 You can choose to 
-	+ Open account
-	+ Deposit funds
-	+ Withdraw funds
++ Open account
++ Deposit funds
++ Withdraw funds
 	+ Close account
 	+ Suspend account(For bank employee)
 	+ Re-instate(For bank employee)
 
-    following the instruction and enter the right information.
+following the instruction and enter the right information.
