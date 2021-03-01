@@ -14,7 +14,7 @@ What functions it has?
 	+ Junior account
 	+ Current account
 
-    Only customer under age 16 may open a Junior account. A customer may open more than one type of account 	       and must credit it with a minimum figure.
+    Only customer under age 16 may open a Junior account. A customer may open more than one type of account 	       and must credit it with a minimum figure. To determine the credit status of a customer, the bank sends the         customer's details to a Credit Agency, who then carries out a credit search. Provided that the customer has a     satisfactory credit history, a new account is opened. Each account has a unique account number. A customer is     also issued a separate personal identification number (PIN) for that account.
 
  2. **Deposit Funds**: Funds may be deposited in an account provided that the depositor provides the appropriate account number. When funds are deposited, they are either cleared (the funds have been fully credited, e.g Cash), or un-cleared (transfer of funds is pending, e.g. using Cheque). Cleared funds are immediately credited to the
 account.
