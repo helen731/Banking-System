@@ -1,4 +1,4 @@
-
+package src;
 /**
  *  Title      : Deposit.java
  *  Description: This class is the class for Deposit.

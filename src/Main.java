@@ -1,3 +1,4 @@
+package src;
 import java.util.Scanner;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -53,8 +54,9 @@ public class Main {
 				System.out.println("Date of birth(in format of yyyy-mm-dd): \n");
 				String birth = sc.next();
 				
+				//check the format
 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");   
-				Date date = null; //≥ı ºªØdate  
+				Date date = null; //Initialize date  
 				while(true){
 					try {   
 						date = sdf.parse(birth); //Mon Jan 14 00:00:00 CST 2013   
