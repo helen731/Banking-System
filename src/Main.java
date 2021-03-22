@@ -1,4 +1,3 @@
-package src;
 import java.util.Scanner;
 import java.text.SimpleDateFormat;
 import java.util.Date;

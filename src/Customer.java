@@ -1,4 +1,4 @@
-package src;
+
 import java.util.Date;
 /**
  *  Title      : Customer.java

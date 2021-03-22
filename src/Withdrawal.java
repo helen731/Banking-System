@@ -1,4 +1,4 @@
-package src;
+
 /**
  *  Title      : Withdrawal.java
  *  Description: This class is the class for Withdrawal.

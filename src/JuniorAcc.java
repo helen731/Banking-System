@@ -1,4 +1,4 @@
-package src;
+
 /**
  *  Title      : JuniorAcc.java
  *  Description: This class is the class for Junior Account.
