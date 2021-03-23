@@ -24,6 +24,7 @@ public class Main {
 			System.out.println("6. Re-instate(For bank employee)\n");
 			System.out.println("7. Clear funds(Just for test)\n");
 			
+			
 		
 			String initial = sc.next(); 
 			while(true){

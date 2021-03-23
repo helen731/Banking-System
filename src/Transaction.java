@@ -9,7 +9,6 @@ import java.util.Date;
  */
 public class Transaction {
 	protected double amount;
-	protected Date day;
 	protected Date time;
 	/**
 	 * This constructor is used to initialize state of transaction
@@ -17,5 +16,6 @@ public class Transaction {
 	 */
 	public Transaction(double money){
 		this.amount = money;
+		time = new Date();
 	}
 }

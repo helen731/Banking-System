@@ -18,7 +18,7 @@ public class Deposit extends Transaction{
 		super(money);
 		this.cleared = false;
 		this.isCash = isCash;
-
+		this.waitMoney = 0;
 	}
 	/**
 	 * This method set cleared to true
@@ -47,8 +47,11 @@ public class Deposit extends Transaction{
 	 * @return double balance to be changed
 	 */
 	public double balanceChange(){
-		if(isCash == true)
+		if(isCash == true) {
+			cleared = true;
 			return amount;
+		}
+			
 		else{
 			System.out.println("waiting for the fund to be cleared");
 			waitMoney = amount;

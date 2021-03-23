@@ -19,4 +19,12 @@ public class SaverAcc extends Account{
 		this.overdraftLimit = 0;
 	}
 	
+	public void setNoticeTime(Date date) {
+		noticeDate = date;
+	}
+	
+	public void setNoticeAmount(double amount) {
+		noticeAmount = amount;
+	}
+	
 }

@@ -14,8 +14,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
 /**
  *  Title      : Bank.java
  *  Description: This class is the class for Bank.
@@ -23,9 +25,12 @@ import java.util.Scanner;
  *  @version 1.0
  */
 public class Bank {
-	private ArrayList<Account> bank = new ArrayList<Account>();
+	private ArrayList<Account> bank;
 	Scanner sc = new Scanner(System.in); 
 	
+	public Bank() {
+		bank = new ArrayList<Account>();
+	}
 	/**
 	 * This method is used to read file and put the details in the corresponding position 
 	 * of the ArrayList
@@ -110,6 +115,8 @@ public class Bank {
 	 * @param c The customer need to confirm the credit status
 	 */
 	public void confirmCreditStatus(Customer c){
+		//the bank sends the customer's details to a Credit Agency,who then carries out a credit search
+		//I assume the credit status is good
 		c.setCreditStatus(true);
 	}
 	
@@ -120,11 +127,23 @@ public class Bank {
 	public String generateAccNo(){
 		Random r = new Random();
 		String accno = String.valueOf(100000+r.nextInt(900000));
-		for(Account a: bank){
-			while(a.getAccNum().equals(accno))
-				accno = String.valueOf(100000+r.nextInt(900000));
+		Set<String> accountSet = AccSet();
+		while(accountSet.contains(accno)) {
+			accno = String.valueOf(100000+r.nextInt(900000));
 		}
 		return accno;
+	}
+	
+	/**
+	 * This method is used to return the set of all account number
+	 * @return Set        a set contains all account number
+	 */
+	public Set<String> AccSet() {
+		Set<String> s = new HashSet<String>();
+		for (Account a: bank) {
+			s.add(a.getAccNum());
+		}
+		return s;
 	}
 	
 	/**
@@ -246,7 +265,8 @@ public class Bank {
 								System.out.println(bank.get(i));
 							}
 							else{
-								giveNotice();
+								SaverAcc sa = new SaverAcc(bank.get(i).getAccNum(),bank.get(i).getCustomer());
+								giveNotice(sa,money);
 							}
 						}
 						else
@@ -267,12 +287,14 @@ public class Bank {
 	/**
 	 * This method is used to give a notice for saver account.
 	 */
-	public void giveNotice(){
+	public void giveNotice(SaverAcc acc, double money){
 		Calendar calendar2 = Calendar.getInstance();
 		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyMMdd");
 		calendar2.add(Calendar.DATE, 7);
 		String seven_days_after = sdf2.format(calendar2.getTime());
 		System.out.println("The withdrawal will be available at " + seven_days_after);
+		acc.setNoticeTime(calendar2.getTime());
+		acc.setNoticeAmount(money);
 	}
 	
 	/**

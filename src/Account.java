@@ -19,7 +19,7 @@ public class Account {
 	protected boolean noticeNeeded;
 	protected double waitMoney;
 	protected Customer customer;
-	ArrayList<Transaction> tran = new ArrayList<Transaction>();
+	protected ArrayList<Transaction> tran;
 	
 	
 	/** This constructor initialize the initial state of an account.
@@ -33,6 +33,7 @@ public class Account {
 		this.isActive = true;
 		this.waitMoney = 0.0;
 		generatePin();
+		tran = new ArrayList<Transaction>();
 	}
 	
 	/** This constructor initialize the initial state of an empty account.
